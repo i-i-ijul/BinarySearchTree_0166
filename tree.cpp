@@ -69,10 +69,29 @@ class BinaryTree
         }
         //step 7: if the value in the data field of the new node is greater than that of the parent
         else if (x > parent->info)
-        (
+        {
+            //7a. make the right child of parent point to the new node
+            parent->rightchild = newNode;
+
+            //7b. exit
+            return;
+        }
+    }
+    
+    void search(int element, Node *&parent, Node *&currentNode)
+    {
+        //this function searches the currentNode of the specified Node as well as the current node of its parent
+        currentNode = ROOT;
+        parent = nullptr;
+        while ((currentNode != nullptr) && (currentNode->info != element))
+        {
+            parent = currentNode;
+            if (element < currentNode->info)
+                currentNode = currentNode->leftchild;
+            else
             
-        )
-    } 
+        }
+    }
 };
 
 int main()
