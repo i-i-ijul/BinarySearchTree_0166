@@ -42,6 +42,7 @@ class BinaryTree
         newNode->leftchild = nullptr;
         newNode->rightchild = nullptr;
 
-        //step 4: locate the node which will be the parent 
+        //step 4: locate the node which will be the parent of the node to be inserted
+        Node *parent = nullptr;
     }
 }
