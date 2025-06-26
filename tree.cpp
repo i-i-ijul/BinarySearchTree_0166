@@ -89,9 +89,9 @@ class BinaryTree
             if (element < currentNode->info)
                 currentNode = currentNode->leftchild;
             else
-            
+
         }
-    }
+    } 
 };
 
 int main()
